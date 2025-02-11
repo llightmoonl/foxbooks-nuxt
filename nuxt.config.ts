@@ -1,5 +1,30 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2024-11-01',
-  devtools: { enabled: true }
+  devtools: {enabled: true},
+
+  modules: [
+    '@nuxt/fonts'
+  ],
+
+  fonts: {
+    families: [
+      {name: 'Inter', provider: 'google'},
+      {name: 'Abril Fatface', provider: 'google'},
+    ]
+  },
+
+  css: [
+    '~/assets/styles/globals.scss'
+  ],
+
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: `@use "~/assets/styles/_vars.scss" as *;`
+        }
+      }
+    }
+  },
+
+  compatibilityDate: '2025-02-11'
 })

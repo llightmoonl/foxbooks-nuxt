@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: $font-main;
+}
+
+body {
+  margin: 0;
+  color: $primary-text-light;
+  background-color: $secondary-bg-light;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
