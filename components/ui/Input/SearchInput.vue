@@ -41,7 +41,7 @@ const value = defineModel('search-input');
     width: 100%;
     border: none;
     border-radius: 0;
-    border-bottom: 1px solid $black-text;
+    border-bottom: 1px solid $search-color;
     padding-left: 40px;
   }
 }

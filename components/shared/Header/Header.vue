@@ -124,7 +124,7 @@ const navigationMenu: Array<NavigationHeader> = [
 
   &__search-input {
     border-color: $secondary-text-light;
-    color: $black-text;
+    color: $search-color;
     background-color: $secondary-text-light;
     caret-color: $primary-bg-light;
   }
